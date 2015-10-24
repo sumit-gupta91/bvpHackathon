@@ -14,6 +14,11 @@
 <!--<![endif]--><script type='text/javascript' src='fullcalendar.min.js'></script>
 <script type='text/javascript'>
 
+    $.get("localhost:5000/getcache", function(data){
+  alert("Data: " + data);
+});
+    
+    
 	$(document).ready(function() {
 		
 		$('#calendar').fullCalendar({
